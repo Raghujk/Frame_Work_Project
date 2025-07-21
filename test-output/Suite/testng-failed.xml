@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="https://magento.softwaretestingboard.com/"/>
+  <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="Com_Luma_Utilites.LUMA_Report"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Com_Luma_Test_Cases.TC_01_Registration_Page">
+        <methods>
+          <include name="ColsingApplication"/>
+          <include name="OpenApplication"/>
+          <include name="RegistrationPage"/>
+        </methods>
+      </class> <!-- Com_Luma_Test_Cases.TC_01_Registration_Page -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
